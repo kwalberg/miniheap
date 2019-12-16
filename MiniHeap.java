@@ -7,12 +7,7 @@ public class MiniHeap {
     public static void main(String[] args) {
         MiniHeap testHeap = new MiniHeap();
         int ptr1 = testHeap.malloc(10);
-        int ptr2 = testHeap.malloc(10);
-        int ptr3 = testHeap.malloc(10);
-        testHeap.free(ptr2);
-        System.out.println(testHeap);
-        testHeap.free(ptr3);
-        System.out.println(testHeap);
+        testHeap.free(ptr1);
     }
 
     /**
